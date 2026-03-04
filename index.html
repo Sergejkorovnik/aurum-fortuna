@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aurum Fortuna | VIP Terminal 2026</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;900&family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <div id="preloader">
+        <div class="loader-content">
+            <div class="logo-main" style="font-size: 40px;">AURUM</div>
+            <div class="loader-bar"><div class="loader-progress"></div></div>
+            <p id="loader-status">Ініціалізація захищеного з'єднання...</p>
+        </div>
+    </div>
+
+    <header class="aurum-header">
+        <div class="logo">
+            <span class="logo-main">AURUM</span>
+            <span class="logo-sub">FORTUNA VIP</span>
+        </div>
+        <div class="stats">
+            <div class="stat-item"><i class="fas fa-users"></i> Online: <span id="count-web">542</span></div>
+            <div class="stat-item gold-text"><i class="fas fa-gem"></i> Jackpot: <span id="jackpot">₴ 1,250,000</span></div>
+        </div>
+        <button class="vip-button" onclick="playSound('click')">ADMIN PANEL</button>
+    </header>
+
+    <div class="wrapper">
+        <nav class="aurum-nav">
+            <div class="nav-item active" data-tab="dashboard"><i class="fas fa-th-large"></i> Панель</div>
+            <div class="nav-item" data-tab="slots"><i class="fas fa-slot-machine"></i> VIP Слоти</div>
+            <div class="nav-item" data-tab="radar"><i class="fas fa-satellite-dish"></i> Сканнер</div>
+            <div class="nav-item" data-tab="analytics"><i class="fas fa-chart-line"></i> Аналітика</div>
+            <div class="nav-item" data-tab="support"><i class="fab fa-telegram"></i> Підтримка</div>
+        </nav>
+
+        <main class="aurum-content">
+            <section id="content-area">
+                <h1 class="gold-text">Система активована</h1>
+                <p>Добро пожалувати в термінал Aurum Fortuna. Оберіть модуль для аналізу.</p>
+            </section>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
